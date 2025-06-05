@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>World Disease Tracking Web Application</title>
 </head>
 <body>
   <h1>World Disease Tracking Web Application</h1>
