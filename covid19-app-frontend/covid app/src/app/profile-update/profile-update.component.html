@@ -1,0 +1,51 @@
+<div class="container-fluid page">
+    <div class="d-flex page__box p-3 mt-2">Update</div>
+    <div class="page__content shadow p-3 position-relative">
+
+        <div class="signup-form">
+            <form method="post" style="width: 761px; margin-left: -180px;">
+                <h2>Update Profile</h2>
+                <div class="form-group">
+                     <div class="col-xs-6">
+                        <label for="first_name" style="font-size: 15px;">First Name</label>
+                        <input type="text" class="form-control" name="first_name" placeholder="First Name" [(ngModel)]="user.firstName" required="required">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <label for="first_name" style="font-size: 15px;">Last Name</label>
+                        <input type="text" class="form-control" name="last_name" placeholder="Last Name" [(ngModel)]="user.lastName" required="required">
+                    </div>
+               </div>
+
+               <div class="form-group">
+                <div class="col-xs-6">
+                    <label for="user_name" style="font-size: 15px;">Username</label>
+                    <input type="text" class="form-control" name="user_name" placeholder="User Name" [(ngModel)]="user.userName" required="required" disabled="true">
+                </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <label for="email" style="font-size: 15px;">Email</label>
+                        <input type="email" class="form-control" name="email" placeholder="Email" [(ngModel)]="user.email" required="required">
+                    </div>
+                </div>
+                <div class="form-group">
+                  <button mat-raised-button (click)="processUserProfileUpdate()" color="primary">Update</button>
+                </div>
+            </form>
+        </div>
+        </div>
+        </div>
+
+        <div
+              class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+              <!-- Copyright -->
+              <div class="text-white mb-3 mb-md-0">
+                Copyright © 2020. All rights reserved.
+              </div>
+              <!-- Copyright -->
+          
+              <!-- Right -->
+            

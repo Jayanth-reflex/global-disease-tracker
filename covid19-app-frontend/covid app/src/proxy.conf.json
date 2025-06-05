@@ -1,0 +1,6 @@
+{
+  "/countries": {
+  "target": "http://localhost:8885",
+  "secure": false
+  }
+}

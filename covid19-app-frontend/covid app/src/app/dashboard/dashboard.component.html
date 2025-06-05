@@ -1,0 +1,72 @@
+<div class="container-fluid page">
+  <div class="d-flex page__box p-3 mt-2">Dashboard - Country Wise Covid Cases Tracking</div>
+  <div class="page__content shadow p-3 position-relative">
+    
+      <div class="card">
+        <p-table #dt2 [value]="countriesDataList" dataKey="id"
+            [rows]="10" [showCurrentPageReport]="true" [rowsPerPageOptions]="[5, 10]" [loading]="loading"
+            [paginator]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+            [globalFilterFields]="['country']" responsiveLayout="scroll">
+            <ng-template pTemplate="caption">
+                <div class="flex">
+                    <span class="p-input-icon-left ml-auto">
+                        <i class="pi pi-search"></i>
+                        <input pInputText type="text" (input)="applyFilterGlobal($event, 'contains')" placeholder="Search by country" />
+                    </span>
+                </div>
+            </ng-template>
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Infected</th>
+                    <th>Tested</th>
+                    <th>Recovered</th>
+                    <th>Deceased</th>
+                    <th>Country</th>
+                    <th>lastUpdatedApify</th>
+                    <th>Add To Wishlist</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-country>
+                <tr>
+                    <td>
+                       {{country.infected}}
+                    </td>
+                    <td>
+                       {{country.tested}}
+                    </td>
+                    <td>
+                      {{country.recovered}}
+                    </td>
+                    <td>
+                      {{country.deceased}}
+                    </td>
+                    <td>
+                      {{country.country}}
+                    </td>
+                    <td>
+                      {{country.lastUpdatedApify}}
+                    </td>
+                    <td>
+                      <button mat-mini-fab aria-label="Example icon-button with a heart icon" (click)="addToWishList(country.infected, country.tested, 
+                      country.recovered, country.deceased, country.country, country.moreData, country.historyData, country.sourceUrl, country.lastUpdatedApify)">
+                        <mat-icon>favorite</mat-icon>
+                      </button>
+                    </td>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="emptymessage">
+                <tr>
+                    <td colspan="5">No Data found.</td>
+                </tr>
+            </ng-template>
+      
+            <div class="flex flex-row justify-content-center">
+              <div *ngIf="this.isTableLoading" class="loader">
+                  <img style="width:50px;height:50px;" src="../../../../assets/loading.svg" />
+              </div>
+          </div>
+        </p-table>
+      </div>
+
+  </div>
+</div>

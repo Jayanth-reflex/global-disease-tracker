@@ -1,0 +1,44 @@
+<div class="container-fluid page">
+    <div class="d-flex page__box p-3 mt-2">My Wish List</div>
+    <div class="page__content shadow p-3 position-relative">
+        <div class="card">
+            <p-table [value]="wishList" [paginator]="true" [rows]="10" [showCurrentPageReport]="true" responsiveLayout="scroll"
+                currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [rowsPerPageOptions]="[5,10]">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>Country</th>
+                        <th>Infected</th>
+                        <th>Tested</th>
+                        <th>Recovered</th>
+                        <th>Deceased</th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-wishlist>
+                    <tr>
+                        <td>
+                          {{wishlist.country}}
+                        </td>
+                        <td>
+                            {{wishlist.infected}}
+                         </td>
+                         <td>
+                            {{wishlist.tested}}
+                         </td>
+                         <td>
+                           {{wishlist.recovered}}
+                         </td>
+                         <td>
+                           {{wishlist.deceased}}
+                         </td>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="paginatorleft">
+                    <p-button type="button" icon="pi pi-plus" styleClass="p-button-text"></p-button>
+                </ng-template>
+                <ng-template pTemplate="paginatorright">
+                    <p-button type="button" icon="pi pi-cloud" styleClass="p-button-text"></p-button>
+                </ng-template>
+            </p-table>
+        </div>
+    </div>
+</div>
