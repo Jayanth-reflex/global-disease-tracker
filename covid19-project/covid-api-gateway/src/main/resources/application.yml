@@ -1,0 +1,27 @@
+spring:
+  main:
+      web-application-type: reactive
+  cloud:
+    gateway:
+      routes[2]:
+        uri: http://localhost:8888/
+        id: external-api-service
+        predicates[0]: Path=/countries/**
+      routes[0]:
+        id: wishList-service
+        uri: http://localhost:8083/
+        predicates[0]: Path=/wishlist/**
+      routes[1]:
+        uri: http://localhost:8400/
+        id: authentication-service
+        predicates[0]: Path=/auth/**
+  application:
+    name: gateway-service
+server:
+  port: 8885
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+      
