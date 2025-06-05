@@ -53,8 +53,6 @@
 
   <h2 id="architecture--tech-stack">Architecture & Tech Stack</h2>
 
-  <img width="573" alt="Screenshot 2025-06-06 at 5 16 44 AM" src="https://github.com/user-attachments/assets/41b73147-afe4-415a-8e40-ab806b955d16" />
-
 
   <h3>Backend (Java - Spring Boot)</h3>
   <ul>
