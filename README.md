@@ -160,19 +160,6 @@ ng serve</code></pre>
   </ul>
 
   <hr />
-  <ol>
-    <li>Fork the repository.</li>
-    <li>Create a new branch:
-      <pre><code>git checkout -b feature/your-feature-name</code></pre>
-    </li>
-    <li>Make your changes and commit:
-      <pre><code>git commit -m "Add your message here"</code></pre>
-    </li>
-    <li>Push to your fork:
-      <pre><code>git push origin feature/your-feature-name</code></pre>
-    </li>
-    <li>Open a pull request with a detailed description.</li>
-  </ol>
 
   <hr />
 
