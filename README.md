@@ -159,11 +159,5 @@ ng serve</code></pre>
     <li><strong>DB Connections:</strong> Check that MySQL and MongoDB are running and credentials are valid.</li>
     <li><strong>CORS Issues:</strong> Verify API Gateway allows frontend origin (adjust CORS settings if needed).</li>
   </ul>
-
-  <hr />
-
-  <hr />
-
-  <hr />
 </body>
 </html>
