@@ -36,8 +36,6 @@
     </li>
     <li><a href="#using-the-application">Using the Application</a></li>
     <li><a href="#common-troubleshooting">Common Troubleshooting</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
   </ol>
 
   <hr />
