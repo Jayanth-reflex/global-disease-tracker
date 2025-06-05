@@ -1,25 +1,69 @@
-## World Disease Tracking Web Application
+# World Disease Tracking Web Application
 
 A full-stack, microservices-based platform to track global disease data, maintain user watchlists, and manage authentication—all accessible through an Angular single-page application.
 
 ---
 
 ### Table of Contents
-1. [Project Overview](#project-overview)
-2. [Architecture & Tech Stack](#architecture--tech-stack)
-3. [Prerequisites](#prerequisites)
-4. [Repository Structure](#repository-structure)
-5. [Setup & Installation](#setup--installation)
-   1. [Clone the Repository](#1-clone-the-repository)
-   2. [Backend Services (Spring Boot Microservices)](#2-backend-services-spring-boot-microservices)
-      1. [Eureka Discovery Server](#21-eureka-discovery-server)
-      2. [MySQL & MongoDB Configuration](#22-mysql--mongodb-configuration)
-      3. [Running Individual Microservices](#23-running-individual-microservices)
-   3. [Frontend Application (Angular)](#3-frontend-application-angular)
-6. [Using the Application](#using-the-application)
-7. [Common Troubleshooting](#common-troubleshooting)
-8. [Contributing](#contributing)
-9. [License](#license)
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Section</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#project-overview">Project Overview</a></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#architecture--tech-stack">Architecture & Tech Stack</a></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#prerequisites">Prerequisites</a></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#repository-structure">Repository Structure</a></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="#setup--installation">Setup & Installation</a></td>
+    </tr>
+    <tr>
+      <td>5.1</td>
+      <td><a href="#1-clone-the-repository">1. Clone the Repository</a></td>
+    </tr>
+    <tr>
+      <td>5.2</td>
+      <td><a href="#2-backend-services-spring-boot-microservices">2. Backend Services (Spring Boot Microservices)</a></td>
+    </tr>
+    <tr>
+      <td>5.2.1</td>
+      <td><a href="#21-eureka-discovery-server">2.1 Eureka Discovery Server</a></td>
+    </tr>
+    <tr>
+      <td>5.2.2</td>
+      <td><a href="#22-mysql--mongodb-configuration">2.2 MySQL &amp; MongoDB Configuration</a></td>
+    </tr>
+    <tr>
+      <td>5.2.3</td>
+      <td><a href="#23-running-individual-microservices">2.3 Running Individual Microservices</a></td>
+    </tr>
+    <tr>
+      <td>5.3</td>
+      <td><a href="#3-frontend-application-angular">3. Frontend Application (Angular)</a></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><a href="#using-the-application">Using the Application</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
@@ -27,10 +71,10 @@ A full-stack, microservices-based platform to track global disease data, maintai
 
 **World Disease Tracking** is designed to:
 
-- Fetch and display global disease statistics (via an external-API microservice).
-- Allow users to register, log in, and manage a “watchlist” of diseases/countries.
-- Provide a responsive Angular UI (maps, charts, tables).
-- Use Eureka for service discovery, with a Gateway routing layer for all HTTP traffic.
+- Fetch and display global disease statistics (via an external-API microservice).  
+- Allow users to register, log in, and manage a “watchlist” of diseases/countries.  
+- Provide a responsive Angular UI (maps, charts, tables).  
+- Use Eureka for service discovery, with a Gateway routing layer for all HTTP traffic.  
 - Store user data in MySQL and watchlist/disease records in MongoDB.
 
 ---
@@ -66,9 +110,3 @@ Before you begin, make sure you have the following installed locally:
 - **MySQL 8.x** (or compatible)  
 - **MongoDB 6.x Community Edition**  
 - **Git** (for cloning)
-
----
-
-## Repository Structure
-
-
