@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-  <h1>World Disease Tracking Web Application</h1>
+  <h1>Global Disease Tracking Web Application</h1>
   <p>
     A full-stack, microservices-based platform to track global disease data, maintain user watchlists, and manage authentication—all accessible through a web application.
   </p>
